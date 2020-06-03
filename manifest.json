@@ -1,0 +1,19 @@
+{
+  "name": "Databricks Cluster Protector",
+  "version": "1.0",
+  "description": "Makes it harder to delete a cluster in Databricks.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.azuredatabricks.net/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "shipit.jpg"
+  ]
+}
